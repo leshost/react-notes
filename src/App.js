@@ -14,11 +14,15 @@ function App() {
         <BrowserRouter>
             <Navbar /> 
             <div className="container pt-4">
+              <div className="row">
+                <div className="col-sm-12">
                 <Alert />
                 <Switch>
                     <Route path={'/'} exact component={Home} />
                     <Route path={'/about'} component={About} />
                 </Switch>
+                </div>
+              </div>
             </div>
         </BrowserRouter>
       </AlertState>
