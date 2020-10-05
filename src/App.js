@@ -6,6 +6,7 @@ import { AlertState } from './context/alert/AlertState';
 import { FirebaseState } from './context/firebase/FirebaseState';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
+import { Pass } from './pages/Pass';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Alert />
                 <Switch>
                     <Route path={'/'} exact component={Home} />
+                    <Route path={'/pass'} exact component={Pass} />
                     <Route path={'/about'} component={About} />
                 </Switch>
                 </div>

@@ -14,7 +14,15 @@ export const Navbar = () => (
                     to="/"
                     exact
                 >
-                    Нотатки
+                    Notes
+                </NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink
+                    className="nav-link"
+                    to="/pass"
+                >
+                    Pass
                 </NavLink>
             </li>
             <li className="nav-item">
@@ -22,7 +30,7 @@ export const Navbar = () => (
                     className="nav-link"
                     to="/about"
                 >
-                    Про програму
+                    About
                 </NavLink>
             </li>
         </ul>
